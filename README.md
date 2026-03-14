@@ -77,44 +77,7 @@ lib/
     chat_bubble.dart
     empty_state.dart
     error_banner.dart
-android/
-  app/
-    build.gradle.kts        # applicationId, signingConfigs.release, minify/shrink
-    src/main/
-      AndroidManifest.xml
-      kotlin/com/rezaafrasyabi/ralocalai/MainActivity.kt  # MethodChannel device info
-  key.properties            # Release keystore credentials (gitignored)
-  ra-upload-keystore.jks    # Release keystore (gitignored)
-  README_RELEASE_SIGNING.md # How to generate keystore and build release APK
-packages/
-  flutter_llama/            # Local plugin for llama.cpp / GGUF inference
-assets/
-  ai_list.json              # Downloadable models list for the app
 ```
-
----
-
-## Build and run (Android)
-
-- **Debug:** `flutter run` (or open in Android Studio).  
-- **Release signed APK:**  
-  1. Ensure `android/key.properties` and `android/ra-upload-keystore.jks` exist (see `android/README_RELEASE_SIGNING.md`).  
-  2. `flutter build apk --release --obfuscate --split-debug-info=build/app/outputs/symbols`  
-- **Output:** `build/app/outputs/flutter-apk/app-release.apk`.
-
----
-
-## Dependencies (main)
-
-- `flutter_llama` (path: `packages/flutter_llama`) – GGUF load and generate  
-- `flutter_riverpod` – state management  
-- `file_picker` – pick `.gguf` files  
-- `shared_preferences` – settings and model list  
-- `permission_handler` – storage for downloads and file picker  
-- `path_provider` – paths and content URIs  
-- `google_fonts` – Plus Jakarta Sans  
-- `device_info_plus` – device info in drawer  
-- `url_launcher` – about link  
 
 ---
 
