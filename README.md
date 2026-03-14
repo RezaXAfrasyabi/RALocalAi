@@ -39,8 +39,8 @@ Screenshots are in `rep/images/`. Order follows the typical user flow.
 | 3 | ![Onboarding – Get started](images/photo_3.jpg) | **Onboarding – Get started** – Open menu, choose a model, start chatting. |
 | 4 | ![Onboarding – Need help](images/photo_4.jpg) | **Onboarding – Need help?** – Skip or Start; Start shows the in-app coach marks tutorial. |
 | 5 | ![Chat – Empty](images/photo_5.jpg) | **Chat – Empty state** – Main chat screen before a model is loaded or when there are no messages. |
-| 6 | ![Chat – Conversation](images/photo_6.jpg) | **Chat – Conversation** – User message and AI reply; model runs locally with streaming. |
-| 7 | ![Drawer – Menu](images/photo_7.jpg) | **Drawer – Menu** – New chat, recent chats, model (load/import/download), saved models, settings, terminal, dark mode, about, device info. |
+| 6 | ![Chat – Conversation](images/photo_6.jpg) | **Drawer – Menu** – New chat, recent chats, model (load/import/download), saved models, settings, terminal, dark mode, about, device info. |
+| 7 | ![Drawer – Menu](images/photo_7.jpg) | **Chat – Conversation** – User message and AI reply; model runs locally with streaming |
 | 8 | ![Download model](images/photo_8.jpg) | **Download model** – List of models with RAM info; tap to download to RA_LocalAiChat. |
 | 9 | ![Generation settings](images/photo_9.jpg) | **Generation settings** – Context size, prompt format, temperature, top-p, top-k, max tokens, repeat penalty. |
 | 10 | ![Terminal](images/photo_10.jpg) | **Terminal** – In-app log viewer for debug and generation output. |
