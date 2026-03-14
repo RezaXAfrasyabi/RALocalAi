@@ -30,7 +30,7 @@ A Flutter-based **Android** app for running AI language models locally on your p
 
 ## Screenshots
 
-Screenshots are in `rep/images/`. Order follows the typical user flow.
+Screenshots are in `images/`. Order follows the typical user flow.
 
 | # | Screenshot | Description |
 |---|------------|-------------|
