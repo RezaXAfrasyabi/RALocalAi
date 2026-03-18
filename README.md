@@ -22,6 +22,20 @@ This repository demonstrates a production-minded Flutter application that:
 - **Onboarding + tutorial**: first-run pages and optional coach-marks overlay.
 - **In-app terminal**: captures app logs and `debugPrint` output for transparent debugging.
 
+## App preview
+
+| Screen | Preview |
+|---|---|
+| **Chat + drawer navigation** | ![Chat screen preview](images/photo_6.jpg) |
+
+## Technical challenges
+
+- **Large-file reliability (GGUF)**: safely handling `content://` URIs and temporary picker cache paths by streaming/copying models into an app-controlled directory when needed, while keeping the UI responsive.
+- **Android storage permissions**: supporting modern Android storage rules and guiding users through “All files access” flows when downloading multi‑GB models to shared storage.
+- **Streaming generation UX**: token streaming with a robust fallback to blocking generation to avoid platform/event-channel edge cases.
+- **Prompt format correctness**: selecting the right chat template per model family (auto‑inferred from file name, with a user override) to keep outputs aligned with training formats.
+- **State & persistence**: predictable local persistence of chat history, last-loaded model path, and generation settings while keeping data on-device by default.
+
 ## Tech stack
 
 - **Flutter / Dart**
@@ -108,10 +122,6 @@ flutter run
 - **Chat history**: stored locally on device (SharedPreferences JSON).  
 - **Inference**: performed locally through the native runtime; no server inference layer is included here.
 - **Network access**: used only for model downloads (URLs listed in `assets/ai_list.json`).
-
-## License
-
-This project’s Dart sources under `lib/` include GNU GPLv3 headers. See the GPLv3 license terms at: `https://www.gnu.org/licenses/gpl-3.0.html`.
 
 ## Author
 
