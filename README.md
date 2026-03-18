@@ -1,92 +1,118 @@
-# RA Local AI (Android)
+# RALocalAi
 
-A Flutter-based **Android** app for running AI language models locally on your phone. Chat with GGUF models entirely on-device—no internet, no cloud, no data sent elsewhere.
+Offline-first **local LLM chat** for Android built with Flutter. Run **GGUF** models fully on-device via **llama.cpp** (through `flutter_llama`) with streaming responses, model download/import, and persisted chat history.
 
----
+## Why this exists
 
-## Overview
+This repository demonstrates a production-minded Flutter application that:
+- Ships a **clean, testable architecture** (Riverpod state management + service boundaries)
+- Provides a strong **mobile UX** for large-file workflows (GGUF import/copy, progress, timeouts)
+- Keeps user data **on-device by design** (no cloud chat history; no server inference)
 
-- **App name:** RA Local AI  
-- **Package:** `com.rezaafrasyabi.ralocalai`  
-- **Platform:** Android only (minSdk 24, arm64-v8a)  
-- **Stack:** Flutter (Dart), flutter_llama (llama.cpp), Riverpod  
+## Key features
 
----
+- **Local inference**: load a `.gguf` file and chat with token streaming (with a safe blocking fallback).
+- **Model acquisition**:
+  - Use an external GGUF file path when possible
+  - Import/copy a model into app documents storage when needed
+  - Download curated models from `assets/ai_list.json` into a shared folder (`RA_LocalAiChat`)
+- **Generation controls**: context size, temperature, top‑p, top‑k, max tokens, repeat penalty.
+- **Prompt templates**: automatic model-family prompt formatting (Llama 3, ChatML, Alpaca, Vicuna, Gemma) with manual override.
+- **Multi-chat history**: create/switch/delete chats; titles auto-derived from the first user message.
+- **Onboarding + tutorial**: first-run pages and optional coach-marks overlay.
+- **In-app terminal**: captures app logs and `debugPrint` output for transparent debugging.
 
-## Features
+## Tech stack
 
-- **Load models:** Pick a `.gguf` file from device, import into app storage, or use previously saved models.
-- **Download models:** In-app list of models (from `assets/ai_list.json`) with RAM compatibility and download progress; downloads go to `RA_LocalAiChat` on external storage.
-- **Chat:** Send messages and get streamed or non-streamed replies from the loaded model.
-- **Prompt formats:** Automatic template selection by model name (Llama 3, ChatML, Alpaca, Vicuna, Gemma), with optional override in Generation settings.
-- **Generation settings:** Context size, temperature, top-p, top-k, max tokens, repeat penalty; all persisted.
-- **Chat history:** Multiple chats with titles; switch or delete from the drawer.
-- **Onboarding:** First-launch intro (About, How it works, Get started, Need help?) with **Skip** / **Start**; **Start** shows coach marks (spotlight + tooltips) on the chat screen.
-- **Drawer:** New chat, recent chats, model actions (external/import/download/downloaded), saved models, generation settings, terminal, dark mode, about, device info.
-- **Terminal:** In-app log viewer for debug output.
-- **Release build:** Signed APK with ProGuard minify/shrink and optional Dart obfuscation (`flutter build apk --release --obfuscate`).
+- **Flutter / Dart**
+- **State management**: Riverpod (`flutter_riverpod`)
+- **Local LLM runtime**: [`flutter_llama`](https://pub.dev/packages/flutter_llama) (llama.cpp wrapper)
+- **Storage / permissions**: `path_provider`, `permission_handler`
+- **UX**: Material 3, Google Fonts
 
----
+## Project structure
 
-## Screenshots
-
-Screenshots are in `images/`. Order follows the typical user flow.
-
-| # | Screenshot | Description |
-|---|------------|-------------|
-| 1 | ![Onboarding – About](images/photo_1.jpg) | **Onboarding – About** – First launch intro: app by Reza Afrasyabi, local AI and privacy. |
-| 2 | ![Onboarding – How it works](images/photo_2.jpg) | **Onboarding – How it works** – Load a GGUF model from the menu, then chat on-device. |
-| 3 | ![Onboarding – Get started](images/photo_3.jpg) | **Onboarding – Get started** – Open menu, choose a model, start chatting. |
-| 4 | ![Onboarding – Need help](images/photo_4.jpg) | **Onboarding – Need help?** – Skip or Start; Start shows the in-app coach marks tutorial. |
-| 5 | ![Chat – Empty](images/photo_5.jpg) | **Chat – Empty state** – Main chat screen before a model is loaded or when there are no messages. |
-| 6 | ![Chat – Conversation](images/photo_6.jpg) | **Drawer – Menu** – New chat, recent chats, model (load/import/download), saved models, settings, terminal, dark mode, about, device info. |
-| 7 | ![Drawer – Menu](images/photo_7.jpg) | **Chat – Conversation** – User message and AI reply; model runs locally with streaming |
-| 8 | ![Download model](images/photo_8.jpg) | **Download model** – List of models with RAM info; tap to download to RA_LocalAiChat. |
-| 9 | ![Generation settings](images/photo_9.jpg) | **Generation settings** – Context size, prompt format, temperature, top-p, top-k, max tokens, repeat penalty. |
-| 10 | ![Terminal](images/photo_10.jpg) | **Terminal** – In-app log viewer for debug and generation output. |
-
----
-
-## Project structure (relevant to Android)
-
-```
+```text
 lib/
-  main.dart                 # Entry; ProviderScope, MyApp, logging
-  app/my_app.dart          # MaterialApp, theme, InitialScreen
+  main.dart                     # Entry point + guarded zone + log capture
+  app/my_app.dart               # MaterialApp + themes + initial routing
   screens/
-    initial_screen.dart     # Onboarding vs ChatScreen; optional coach marks
-    chat_screen.dart        # Main chat UI, drawer, model list, tutorial overlay
-    generation_settings_screen.dart
-    terminal_screen.dart
+    initial_screen.dart         # Onboarding vs ChatScreen
+    chat_screen.dart            # Main UI, model flows, drawer navigation
+    terminal_screen.dart        # In-app log viewer
   services/
-    local_ai_service.dart   # FlutterLlama wrapper, loadModel, sendPrompt[Stream], prompt building
-    device_ram_service.dart
+    local_ai_service.dart        # Inference boundary (flutter_llama wrapper)
+    app_log_service.dart         # Central in-memory logging
+    device_ram_service.dart      # Android RAM query via platform channel
     storage_permission_service.dart
-    app_log_service.dart
+    native_runtime_service.dart  # Deprecated stubs (kept for compatibility)
   providers/
     chat_provider.dart
     chat_history_provider.dart
     model_list_provider.dart
-    generation_settings_provider.dart  # Includes promptFormat (ModelType?)
     model_download_provider.dart
+    downloaded_models_provider.dart
+    generation_settings_provider.dart
+    theme_provider.dart
+    app_providers.dart
+  models/
+    chat.dart
+    chat_message.dart
+    ai_model_list_item.dart
   utils/
-    ai_formatter.dart       # ModelType enum, AIFormatter.buildPrompt, inferFromModelName
-    device_info.dart
+    ai_formatter.dart            # Prompt templates + model-family inference
+    device_info.dart             # Drawer diagnostics via platform channel
   widgets/
-    coach_marks_overlay.dart
     chat_bubble.dart
+    typing_indicator_bubble.dart
     empty_state.dart
     error_banner.dart
+    coach_marks_overlay.dart
+assets/
+  ai_list.json
+  icon_launcher.png
 ```
 
----
+## Run locally
+
+### Prerequisites
+
+- Flutter SDK installed (`flutter doctor` should be clean)
+- Android SDK / Android Studio, or an Android device with USB debugging
+
+### Install dependencies
+
+```bash
+flutter pub get
+```
+
+### Run on Android
+
+```bash
+flutter run
+```
+
+## Using GGUF models
+
+- **File picker**: choose a `.gguf` model from device storage.
+- **Import vs external path**:
+  - **External**: the app uses the selected file path directly when it’s reliable.
+  - **Import**: if the path is a `content://` URI, in a temporary cache, or otherwise unreliable, the app streams and copies the file into the app documents directory for stable loading.
+- **Downloads folder**: downloaded models are stored in:
+  - Android: `/storage/emulated/0/RA_LocalAiChat`
+
+> Models can be very large. On Android, the app may request “All files access” depending on OS version and storage APIs.
+
+## Privacy & data handling
+
+- **Chat history**: stored locally on device (SharedPreferences JSON).  
+- **Inference**: performed locally through the native runtime; no server inference layer is included here.
+- **Network access**: used only for model downloads (URLs listed in `assets/ai_list.json`).
+
+## License
+
+This project’s Dart sources under `lib/` include GNU GPLv3 headers. See the GPLv3 license terms at: `https://www.gnu.org/licenses/gpl-3.0.html`.
 
 ## Author
 
-Reza Afrasyabi – [rezaafrasyabi.com](https://rezaafrasyabi.com)
-
----
-
-*This document describes the Android version of the project for GitHub.*
-"# RALocalAi" 
-"# RALocalAi" 
+Reza Afrasyabi — `rezaafrasyabi.com`
