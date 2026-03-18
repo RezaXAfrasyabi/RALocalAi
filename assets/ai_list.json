@@ -1,0 +1,726 @@
+{
+  "models": [
+    {
+      "name": "Nidum-Llama-3.2-3B-Uncensored-GGUF",
+      "repo_id": "VibeStudio/Nidum-Llama-3.2-3B-Uncensored-GGUF",
+      "description": "Text Generation \u2022 3B \u2022 Updated Dec 17, 2024 \u2022 6.67k \u2022 37",
+      "parameters": "3B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Nidum-Llama-3.2-3B-Uncensored-GGUF.gguf",
+      "gguf_size_bytes": 2019377632,
+      "download_url": "https://huggingface.co/VibeStudio/Nidum-Llama-3.2-3B-Uncensored-GGUF/resolve/main/model-Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen2.5-Coder-3B-Instruct-GGUF",
+      "repo_id": "Qwen/Qwen2.5-Coder-3B-Instruct-GGUF",
+      "description": "Text Generation \u2022 3B \u2022 Updated Nov 11, 2024 \u2022 33k \u2022 61",
+      "parameters": "3B",
+      "abilities": [
+        "text-generation",
+        "code",
+        "censored"
+      ],
+      "gguf_file": "qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+      "gguf_size_bytes": 2104932800,
+      "download_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF/resolve/main/qwen2.5-coder-3b-instruct-q4_k_m.gguf"
+    },
+    {
+      "name": "luvGPT_phi3-uncensored-chat-GGUF",
+      "repo_id": "bartowski/luvGPT_phi3-uncensored-chat-GGUF",
+      "description": "Text Generation \u2022 4B \u2022 Updated Mar 21, 2025 \u2022 476 \u2022 6",
+      "parameters": "4B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "luvGPT_phi3-uncensored-chat-Q4_K_M.gguf",
+      "gguf_size_bytes": 2393232384,
+      "download_url": "https://huggingface.co/bartowski/luvGPT_phi3-uncensored-chat-GGUF/resolve/main/luvGPT_phi3-uncensored-chat-Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen3-4B-Gemini-TripleX-High-Reasoning-Thinking-Heretic-Uncensored-GGUF",
+      "repo_id": "DavidAU/Qwen3-4B-Gemini-TripleX-High-Reasoning-Thinking-Heretic-Uncensored-GGUF",
+      "description": "Text Generation \u2022 4B \u2022 Updated 29 days ago \u2022 9.07k \u2022 29",
+      "parameters": "4B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Qwen3-4B-Gemini-TripleX-High-Reasoning-Thinking-Heretic-Uncensored.Q4_K_M.gguf",
+      "gguf_size_bytes": null,
+      "download_url": "https://huggingface.co/DavidAU/Qwen3-4B-Gemini-TripleX-High-Reasoning-Thinking-Heretic-Uncensored-GGUF/resolve/main/Qwen3-4B-Gemini-TripleX-High-Reasoning-Thinking-Heretic-Uncensored.Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-GGUF",
+      "repo_id": "Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-GGUF",
+      "description": "Text Generation \u2022 4B \u2022 Updated 5 days ago \u2022 27.2k \u2022 37",
+      "parameters": "4B",
+      "abilities": [
+        "text-generation",
+        "reasoning",
+        "censored"
+      ],
+      "gguf_file": "Qwen3.5-4B.Q4_K_M.gguf",
+      "gguf_size_bytes": 2707510080,
+      "download_url": "https://huggingface.co/Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-GGUF/resolve/main/Qwen3.5-4B.Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen3-4b-Z-Image-Engineer-V4",
+      "repo_id": "BennyDaBall/Qwen3-4b-Z-Image-Engineer-V4",
+      "description": "Text Generation \u2022 4B \u2022 Updated Feb 5 \u2022 29.4k \u2022 95",
+      "parameters": "4B",
+      "abilities": [
+        "text-generation",
+        "vision",
+        "image-engineering",
+        "censored"
+      ],
+      "gguf_file": "Qwen3-4b-Z-Image-Engineer-V4-Q4_K_M.gguf",
+      "gguf_size_bytes": 2497280320,
+      "download_url": "https://huggingface.co/BennyDaBall/Qwen3-4b-Z-Image-Engineer-V4/resolve/main/Qwen3-4b-Z-Image-Engineer-V4-Q4_K_M.gguf"
+    },
+    {
+      "name": "Jan-code-4b-gguf",
+      "repo_id": "janhq/Jan-code-4b-gguf",
+      "description": "Text Generation \u2022 4B \u2022 Updated 8 days ago \u2022 10.4k \u2022 42",
+      "parameters": "4B",
+      "abilities": [
+        "text-generation",
+        "code",
+        "censored"
+      ],
+      "gguf_file": "Jan-code-4b-Q4_K_M.gguf",
+      "gguf_size_bytes": 2716066656,
+      "download_url": "https://huggingface.co/janhq/Jan-code-4b-gguf/resolve/main/Jan-code-4b-Q4_K_M.gguf"
+    },
+    {
+      "name": "LocoOperator-4B",
+      "repo_id": "LocoreMind/LocoOperator-4B",
+      "description": "Text Generation \u2022 4B \u2022 Updated 16 days ago \u2022 17k \u2022 274",
+      "parameters": "4B",
+      "abilities": [
+        "text-generation",
+        "agents",
+        "censored"
+      ],
+      "gguf_file": "LocoOperator-4B.Q4_K_M.gguf",
+      "gguf_size_bytes": null,
+      "download_url": "https://huggingface.co/LocoreMind/LocoOperator-4B/resolve/main/LocoOperator-4B.Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen3.5-4B-Safety-Thinking",
+      "repo_id": "MerlinSafety/Qwen3.5-4B-Safety-Thinking",
+      "description": "Text Generation \u2022 4B \u2022 Updated 10 days ago \u2022 2.51k \u2022 10",
+      "parameters": "4B",
+      "abilities": [
+        "text-generation",
+        "safety",
+        "reasoning",
+        "censored"
+      ],
+      "gguf_file": "model-q4-Q4_K_M.gguf",
+      "gguf_size_bytes": 2696580480,
+      "download_url": "https://huggingface.co/MerlinSafety/Qwen3.5-4B-Safety-Thinking/resolve/main/model-q4-Q4_K_M.gguf"
+    },
+    {
+      "name": "Phi-4-mini-instruct-GGUF",
+      "repo_id": "unsloth/Phi-4-mini-instruct-GGUF",
+      "description": "Text Generation \u2022 4B \u2022 Updated Mar 3, 2025 \u2022 19.7k \u2022 78",
+      "parameters": "4B",
+      "abilities": [
+        "text-generation",
+        "censored"
+      ],
+      "gguf_file": "Phi-4-mini-instruct-Q4_K_M.gguf",
+      "gguf_size_bytes": 2491874272,
+      "download_url": "https://huggingface.co/unsloth/Phi-4-mini-instruct-GGUF/resolve/main/Phi-4-mini-instruct-Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen3.5-4B-Claude-Opus-4.6-Distilled-heretic",
+      "repo_id": "ghost-actual/Qwen3.5-4B-Claude-Opus-4.6-Distilled-heretic",
+      "description": "Text Generation \u2022 5B \u2022 Updated 5 days ago \u2022 1.03k \u2022 3",
+      "parameters": "5B",
+      "abilities": [
+        "text-generation",
+        "reasoning",
+        "censored"
+      ],
+      "gguf_file": "Qwen3.5-4B-Claude-Opus-4.6-Distilled-heretic.Q4_K_M.gguf",
+      "gguf_size_bytes": null,
+      "download_url": "https://huggingface.co/ghost-actual/Qwen3.5-4B-Claude-Opus-4.6-Distilled-heretic/resolve/main/Qwen3.5-4B-Claude-Opus-4.6-Distilled-heretic.Q4_K_M.gguf"
+    },
+    {
+      "name": "Guanaco-7B-Uncensored-GGUF",
+      "repo_id": "TheBloke/Guanaco-7B-Uncensored-GGUF",
+      "description": "Text Generation \u2022 7B \u2022 Updated Sep 27, 2023 \u2022 1.3k \u2022 19",
+      "parameters": "7B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "guanaco-7b-uncensored.Q4_K_M.gguf",
+      "gguf_size_bytes": 4081004224,
+      "download_url": "https://huggingface.co/TheBloke/Guanaco-7B-Uncensored-GGUF/resolve/main/guanaco-7b-uncensored.Q4_K_M.gguf"
+    },
+    {
+      "name": "ajibawa-2023-Uncensored-Jordan-7B-GGUF",
+      "repo_id": "s3nh/ajibawa-2023-Uncensored-Jordan-7B-GGUF",
+      "description": "Text Generation \u2022 7B \u2022 Updated Oct 31, 2023 \u2022 10 \u2022 4",
+      "parameters": "7B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "ajibawa-2023-Uncensored-Jordan-7B.Q4_K_M.gguf",
+      "gguf_size_bytes": 4081004224,
+      "download_url": "https://huggingface.co/s3nh/ajibawa-2023-Uncensored-Jordan-7B-GGUF/resolve/main/ajibawa-2023-Uncensored-Jordan-7B.Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen2.5-7B-Instruct-Uncensored-Q4_K_M-GGUF",
+      "repo_id": "WSDW/Qwen2.5-7B-Instruct-Uncensored-Q4_K_M-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated Oct 6, 2024 \u2022 7.37k \u2022 2",
+      "parameters": "8B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "qwen2.5-7b-instruct-uncensored-q4_k_m.gguf",
+      "gguf_size_bytes": 4683072288,
+      "download_url": "https://huggingface.co/WSDW/Qwen2.5-7B-Instruct-Uncensored-Q4_K_M-GGUF/resolve/main/qwen2.5-7b-instruct-uncensored-q4_k_m.gguf"
+    },
+    {
+      "name": "L3.2-Rogue-Creative-Instruct-Uncensored-Abliterated-7B-GGUF",
+      "repo_id": "DavidAU/L3.2-Rogue-Creative-Instruct-Uncensored-Abliterated-7B-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated Sep 25, 2025 \u2022 6.53k \u2022 130",
+      "parameters": "8B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "L3.2-Rogue-Creative-Instruct-Uncensored-Abliterated-7B-D_AU-Q4_k_m.gguf",
+      "gguf_size_bytes": 4588966592,
+      "download_url": "https://huggingface.co/DavidAU/L3.2-Rogue-Creative-Instruct-Uncensored-Abliterated-7B-GGUF/resolve/main/L3.2-Rogue-Creative-Instruct-Uncensored-Abliterated-7B-D_AU-Q4_k_m.gguf"
+    },
+    {
+      "name": "L3.1-Dark-Reasoning-Dark-Planet-Hermes-R1-Uncensored-Horror-Imatrix-MAX-8B-GGUF",
+      "repo_id": "DavidAU/L3.1-Dark-Reasoning-Dark-Planet-Hermes-R1-Uncensored-Horror-Imatrix-MAX-8B-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated May 28, 2025 \u2022 981 \u2022 5",
+      "parameters": "8B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "L3.1-Dark-Reason-Dark-Plnt-Hrm-R1-Uncen-Hrr-Imtr-MAX-8B-D_AU-Q4_K_M-imat.gguf",
+      "gguf_size_bytes": 5540473184,
+      "download_url": "https://huggingface.co/DavidAU/L3.1-Dark-Reasoning-Dark-Planet-Hermes-R1-Uncensored-Horror-Imatrix-MAX-8B-GGUF/resolve/main/L3.1-Dark-Reason-Dark-Plnt-Hrm-R1-Uncen-Hrr-Imtr-MAX-8B-D_AU-Q4_K_M-imat.gguf"
+    },
+    {
+      "name": "Qwen3-8B-64k-Josiefied-Uncensored-NEO-Max-GGUF",
+      "repo_id": "DavidAU/Qwen3-8B-64k-Josiefied-Uncensored-NEO-Max-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated Jul 28, 2025 \u2022 700 \u2022 12",
+      "parameters": "8B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Qwen3-8B-64k-Josiefied-Uncensored-NEO-Max-D_AU-Q4_K_M-imat.gguf",
+      "gguf_size_bytes": 5761939008,
+      "download_url": "https://huggingface.co/DavidAU/Qwen3-8B-64k-Josiefied-Uncensored-NEO-Max-GGUF/resolve/main/Qwen3-8B-64k-Josiefied-Uncensored-NEO-Max-D_AU-Q4_K_M-imat.gguf"
+    },
+    {
+      "name": "Qwen3-8B-64k-Josiefied-Uncensored-HORROR-Max-GGUF",
+      "repo_id": "DavidAU/Qwen3-8B-64k-Josiefied-Uncensored-HORROR-Max-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated May 12, 2025 \u2022 417 \u2022 8",
+      "parameters": "8B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Qwen3-8B-64k-Josiefied-Uncensored-HORROR-Max-D_AU-Q4_K_M-imat.gguf",
+      "gguf_size_bytes": 5761939040,
+      "download_url": "https://huggingface.co/DavidAU/Qwen3-8B-64k-Josiefied-Uncensored-HORROR-Max-GGUF/resolve/main/Qwen3-8B-64k-Josiefied-Uncensored-HORROR-Max-D_AU-Q4_K_M-imat.gguf"
+    },
+    {
+      "name": "Qwen3-8B-Hivemind-Instruct-Heretic-Abliterated-Uncensored-NEO-Imatrix-GGUF",
+      "repo_id": "DavidAU/Qwen3-8B-Hivemind-Instruct-Heretic-Abliterated-Uncensored-NEO-Imatrix-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated Dec 5, 2025 \u2022 11.2k \u2022 33",
+      "parameters": "8B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Qwen3-8B-Hivemind-Inst-Hrtic-Ablit-Uncensored-Q4_K_M-imat.gguf",
+      "gguf_size_bytes": 4669552000,
+      "download_url": "https://huggingface.co/DavidAU/Qwen3-8B-Hivemind-Instruct-Heretic-Abliterated-Uncensored-NEO-Imatrix-GGUF/resolve/main/Qwen3-8B-Hivemind-Inst-Hrtic-Ablit-Uncensored-Q4_K_M-imat.gguf"
+    },
+    {
+      "name": "Lexi-Llama-3-8B-Uncensored-GGUF",
+      "repo_id": "bartowski/Lexi-Llama-3-8B-Uncensored-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated Apr 24, 2024 \u2022 16.4k \u2022 50",
+      "parameters": "8B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Lexi-Llama-3-8B-Uncensored-Q4_K_M.gguf",
+      "gguf_size_bytes": 4920733984,
+      "download_url": "https://huggingface.co/bartowski/Lexi-Llama-3-8B-Uncensored-GGUF/resolve/main/Lexi-Llama-3-8B-Uncensored-Q4_K_M.gguf"
+    },
+    {
+      "name": "Llama-3-8B-LexiFun-Uncensored-V1-old-GGUF",
+      "repo_id": "bartowski/Llama-3-8B-LexiFun-Uncensored-V1-old-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated Apr 26, 2024 \u2022 208 \u2022 2",
+      "parameters": "8B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Llama-3-8B-LexiFun-Uncensored-V1-Q4_K_M.gguf",
+      "gguf_size_bytes": 4920733984,
+      "download_url": "https://huggingface.co/bartowski/Llama-3-8B-LexiFun-Uncensored-V1-old-GGUF/resolve/main/Llama-3-8B-LexiFun-Uncensored-V1-Q4_K_M.gguf"
+    },
+    {
+      "name": "Llama-3-8B-Lexi-Uncensored-GGUF",
+      "repo_id": "QuantFactory/Llama-3-8B-Lexi-Uncensored-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated May 5, 2024 \u2022 425 \u2022 15",
+      "parameters": "8B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Llama-3-8B-Lexi-Uncensored.Q4_K_M.gguf",
+      "gguf_size_bytes": 4921247040,
+      "download_url": "https://huggingface.co/QuantFactory/Llama-3-8B-Lexi-Uncensored-GGUF/resolve/main/Llama-3-8B-Lexi-Uncensored.Q4_K_M.gguf"
+    },
+    {
+      "name": "llama3_8b_chat_uncensored",
+      "repo_id": "georgesung/llama3_8b_chat_uncensored",
+      "description": "Text Generation \u2022 8B \u2022 Updated Apr 30, 2024 \u2022 843 \u2022 20",
+      "parameters": "8B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "llama3_8b_chat_uncensored.Q4_K_M.gguf",
+      "gguf_size_bytes": null,
+      "download_url": "https://huggingface.co/georgesung/llama3_8b_chat_uncensored/resolve/main/llama3_8b_chat_uncensored.Q4_K_M.gguf"
+    },
+    {
+      "name": "Llama-3-8B-LexiFun-Uncensored-V1-GGUF",
+      "repo_id": "bartowski/Llama-3-8B-LexiFun-Uncensored-V1-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated May 1, 2024 \u2022 543 \u2022 7",
+      "parameters": "8B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Llama-3-8B-LexiFun-Uncensored-V1-Q4_K_M.gguf",
+      "gguf_size_bytes": 4920734336,
+      "download_url": "https://huggingface.co/bartowski/Llama-3-8B-LexiFun-Uncensored-V1-GGUF/resolve/main/Llama-3-8B-LexiFun-Uncensored-V1-Q4_K_M.gguf"
+    },
+    {
+      "name": "Uncensored-Frank-Llama-3-8B-GGUF",
+      "repo_id": "bartowski/Uncensored-Frank-Llama-3-8B-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated May 5, 2024 \u2022 205 \u2022 6",
+      "parameters": "8B",
+      "abilities": [
+        "text-generation",
+        "uncensored"
+      ],
+      "gguf_file": "Uncensored-Frank-Llama-3-8B-Q4_K_M.gguf",
+      "gguf_size_bytes": 4920734208,
+      "download_url": "https://huggingface.co/bartowski/Uncensored-Frank-Llama-3-8B-GGUF/resolve/main/Uncensored-Frank-Llama-3-8B-Q4_K_M.gguf"
+    },
+    {
+      "name": "DeepSeek-R1-0528-Qwen3-8B-GGUF",
+      "repo_id": "unsloth/DeepSeek-R1-0528-Qwen3-8B-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated Jun 16, 2025 \u2022 103k \u2022 389",
+      "parameters": "8B",
+      "abilities": [
+        "text-generation",
+        "reasoning",
+        "censored"
+      ],
+      "gguf_file": "DeepSeek-R1-0528-Qwen3-8B-Q4_K_M.gguf",
+      "gguf_size_bytes": 5027785216,
+      "download_url": "https://huggingface.co/unsloth/DeepSeek-R1-0528-Qwen3-8B-GGUF/resolve/main/DeepSeek-R1-0528-Qwen3-8B-Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen2.5-Coder-7B-Instruct-GGUF",
+      "repo_id": "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated Nov 12, 2024 \u2022 99.5k \u2022 203",
+      "parameters": "8B",
+      "abilities": [
+        "text-generation",
+        "code",
+        "censored"
+      ],
+      "gguf_file": "qwen2.5-coder-7b-instruct-q4_k_m-00001-of-00002.gguf",
+      "gguf_size_bytes": 3993201376,
+      "download_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/main/qwen2.5-coder-7b-instruct-q4_k_m-00001-of-00002.gguf"
+    },
+    {
+      "name": "Qwen3-8B-GGUF",
+      "repo_id": "Qwen/Qwen3-8B-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated May 21, 2025 \u2022 80.2k \u2022 160",
+      "parameters": "8B",
+      "abilities": [
+        "text-generation",
+        "censored"
+      ],
+      "gguf_file": "Qwen3-8B-Q4_K_M.gguf",
+      "gguf_size_bytes": 5027783488,
+      "download_url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q4_K_M.gguf"
+    },
+    {
+      "name": "Nerdsking-python-coder-7B-i",
+      "repo_id": "Nerdsking/Nerdsking-python-coder-7B-i",
+      "description": "Text Generation \u2022 8B \u2022 Updated 16 days ago \u2022 2.07k \u2022 15",
+      "parameters": "8B",
+      "abilities": [
+        "text-generation",
+        "code",
+        "python",
+        "censored"
+      ],
+      "gguf_file": "Nerdsking-python-coder-7B-i.Q4_K_M.gguf",
+      "gguf_size_bytes": null,
+      "download_url": "https://huggingface.co/Nerdsking/Nerdsking-python-coder-7B-i/resolve/main/Nerdsking-python-coder-7B-i.Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen2.5-7B-Instruct-GGUF",
+      "repo_id": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated Sep 20, 2024 \u2022 49.4k \u2022 129",
+      "parameters": "8B",
+      "abilities": [
+        "text-generation",
+        "censored"
+      ],
+      "gguf_file": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+      "gguf_size_bytes": 3993201344,
+      "download_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF/resolve/main/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf"
+    },
+    {
+      "name": "Cybersecurity-BaronLLM_Offensive_Security_LLM_Q6_K_GGUF",
+      "repo_id": "AlicanKiraz0/Cybersecurity-BaronLLM_Offensive_Security_LLM_Q6_K_GGUF",
+      "description": "Text Generation \u2022 8B \u2022 Updated Jun 4, 2025 \u2022 603 \u2022 144",
+      "parameters": "8B",
+      "abilities": [
+        "text-generation",
+        "cybersecurity",
+        "offensive-security",
+        "censored"
+      ],
+      "gguf_file": "Cybersecurity-BaronLLM_Offensive_Security_LLM.Q4_K_M.gguf",
+      "gguf_size_bytes": null,
+      "download_url": "https://huggingface.co/AlicanKiraz0/Cybersecurity-BaronLLM_Offensive_Security_LLM_Q6_K_GGUF/resolve/main/Cybersecurity-BaronLLM_Offensive_Security_LLM.Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-GGUF",
+      "repo_id": "Jackrong/Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-GGUF",
+      "description": "Text Generation \u2022 9B \u2022 Updated 5 days ago \u2022 40.3k \u2022 69",
+      "parameters": "9B",
+      "abilities": [
+        "text-generation",
+        "reasoning",
+        "censored"
+      ],
+      "gguf_file": "Qwen3.5-9B.Q4_K_M.gguf",
+      "gguf_size_bytes": 5627040640,
+      "download_url": "https://huggingface.co/Jackrong/Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-GGUF/resolve/main/Qwen3.5-9B.Q4_K_M.gguf"
+    },
+    {
+      "name": "qwen3.5-9b-terminal-merge",
+      "repo_id": "EganAI/qwen3.5-9b-terminal-merge",
+      "description": "Text Generation \u2022 9B \u2022 Updated 5 days ago \u2022 3.17k \u2022 14",
+      "parameters": "9B",
+      "abilities": [
+        "text-generation",
+        "terminal",
+        "censored"
+      ],
+      "gguf_file": "qwen3.5-9b-terminal-merge.Q4_K_M.gguf",
+      "gguf_size_bytes": null,
+      "download_url": "https://huggingface.co/EganAI/qwen3.5-9b-terminal-merge/resolve/main/qwen3.5-9b-terminal-merge.Q4_K_M.gguf"
+    },
+    {
+      "name": "gemma-7b",
+      "repo_id": "google/gemma-7b",
+      "description": "Text Generation \u2022 9B \u2022 Updated Jun 27, 2024 \u2022 94.1k \u2022 3.28k",
+      "parameters": "9B",
+      "abilities": [
+        "text-generation",
+        "censored"
+      ],
+      "gguf_file": "gemma-7b.Q4_K_M.gguf",
+      "gguf_size_bytes": null,
+      "download_url": "https://huggingface.co/google/gemma-7b/resolve/main/gemma-7b.Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen3.5-9B-Uncensored",
+      "repo_id": "LEONW24/Qwen3.5-9B-Uncensored",
+      "description": "Text Generation \u2022 10B \u2022 Updated about 10 hours ago \u2022 319 \u2022 5",
+      "parameters": "10B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Qwen3.5-9B-Uncensored-Q4_K_M.gguf",
+      "gguf_size_bytes": 6691882080,
+      "download_url": "https://huggingface.co/LEONW24/Qwen3.5-9B-Uncensored/resolve/main/Qwen3.5-9B-Uncensored-Q4_K_M.gguf"
+    },
+    {
+      "name": "Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC-GGUF",
+      "repo_id": "Andycurrent/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC-GGUF",
+      "description": "Text Generation \u2022 12B \u2022 Updated 8 days ago \u2022 4.56k \u2022 5",
+      "parameters": "12B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC_Q4_k_m.gguf",
+      "gguf_size_bytes": 7477206496,
+      "download_url": "https://huggingface.co/Andycurrent/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC-GGUF/resolve/main/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC_Q4_k_m.gguf"
+    },
+    {
+      "name": "gemma-3-12b-it-heretic-v2",
+      "repo_id": "DreamFast/gemma-3-12b-it-heretic-v2",
+      "description": "Text Generation \u2022 12B \u2022 Updated 2 days ago \u2022 984 \u2022 6",
+      "parameters": "12B",
+      "abilities": [
+        "text-generation",
+        "censored"
+      ],
+      "gguf_file": "gguf/gemma-3-12b-it-heretic-v2-Q4_K_M.gguf",
+      "gguf_size_bytes": 7300778176,
+      "download_url": "https://huggingface.co/DreamFast/gemma-3-12b-it-heretic-v2/resolve/main/gguf/gemma-3-12b-it-heretic-v2-Q4_K_M.gguf"
+    },
+    {
+      "name": "gemma-3-12b-it-heretic",
+      "repo_id": "DreamFast/gemma-3-12b-it-heretic",
+      "description": "Text Generation \u2022 12B \u2022 Updated 2 days ago \u2022 15.4k \u2022 62",
+      "parameters": "12B",
+      "abilities": [
+        "text-generation",
+        "censored"
+      ],
+      "gguf_file": "gguf/gemma-3-12b-it-heretic-Q4_K_M.gguf",
+      "gguf_size_bytes": 7300778144,
+      "download_url": "https://huggingface.co/DreamFast/gemma-3-12b-it-heretic/resolve/main/gguf/gemma-3-12b-it-heretic-Q4_K_M.gguf"
+    },
+    {
+      "name": "Guanaco-13B-Uncensored-GGUF",
+      "repo_id": "TheBloke/Guanaco-13B-Uncensored-GGUF",
+      "description": "Text Generation \u2022 13B \u2022 Updated Sep 27, 2023 \u2022 1.04k \u2022 43",
+      "parameters": "13B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "guanaco-13b-uncensored.Q4_K_M.gguf",
+      "gguf_size_bytes": 7865956288,
+      "download_url": "https://huggingface.co/TheBloke/Guanaco-13B-Uncensored-GGUF/resolve/main/guanaco-13b-uncensored.Q4_K_M.gguf"
+    },
+    {
+      "name": "Wizard-Vicuna-13B-Uncensored-GGUF",
+      "repo_id": "second-state/Wizard-Vicuna-13B-Uncensored-GGUF",
+      "description": "Text Generation \u2022 13B \u2022 Updated Mar 20, 2024 \u2022 595 \u2022 16",
+      "parameters": "13B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Wizard-Vicuna-13B-Uncensored-Q4_K_M.gguf",
+      "gguf_size_bytes": 7865956352,
+      "download_url": "https://huggingface.co/second-state/Wizard-Vicuna-13B-Uncensored-GGUF/resolve/main/Wizard-Vicuna-13B-Uncensored-Q4_K_M.gguf"
+    },
+    {
+      "name": "ehartford-WizardLM-1.0-Uncensored-Llama2-13b-GGUF",
+      "repo_id": "s3nh/ehartford-WizardLM-1.0-Uncensored-Llama2-13b-GGUF",
+      "description": "Text Generation \u2022 13B \u2022 Updated Oct 27, 2023 \u2022 30 \u2022 3",
+      "parameters": "13B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "ehartford-WizardLM-1.0-Uncensored-Llama2-13b.Q4_K_M.gguf",
+      "gguf_size_bytes": 7865956224,
+      "download_url": "https://huggingface.co/s3nh/ehartford-WizardLM-1.0-Uncensored-Llama2-13b-GGUF/resolve/main/ehartford-WizardLM-1.0-Uncensored-Llama2-13b.Q4_K_M.gguf"
+    },
+    {
+      "name": "ajibawa-2023-Uncensored-Jordan-13B-GGUF",
+      "repo_id": "s3nh/ajibawa-2023-Uncensored-Jordan-13B-GGUF",
+      "description": "Text Generation \u2022 13B \u2022 Updated Oct 31, 2023 \u2022 20 \u2022 2",
+      "parameters": "13B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "ajibawa-2023-Uncensored-Jordan-13B.Q4_K_M.gguf",
+      "gguf_size_bytes": 7865956224,
+      "download_url": "https://huggingface.co/s3nh/ajibawa-2023-Uncensored-Jordan-13B-GGUF/resolve/main/ajibawa-2023-Uncensored-Jordan-13B.Q4_K_M.gguf"
+    },
+    {
+      "name": "WizardLM-13B-V1.0-Uncensored-GGUF",
+      "repo_id": "second-state/WizardLM-13B-V1.0-Uncensored-GGUF",
+      "description": "Text Generation \u2022 13B \u2022 Updated Mar 20, 2024 \u2022 422 \u2022 2",
+      "parameters": "13B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "WizardLM-13B-V1.0-Uncensored-Q4_K_M.gguf",
+      "gguf_size_bytes": 7865956352,
+      "download_url": "https://huggingface.co/second-state/WizardLM-13B-V1.0-Uncensored-GGUF/resolve/main/WizardLM-13B-V1.0-Uncensored-Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF",
+      "repo_id": "TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF",
+      "description": "Text Generation \u2022 15B \u2022 Updated 18 days ago \u2022 101k \u2022 289",
+      "parameters": "15B",
+      "abilities": [
+        "text-generation",
+        "reasoning",
+        "censored"
+      ],
+      "gguf_file": "Qwen3-14B-Claude-4.5-Opus-Distill.q4_k_m.gguf",
+      "gguf_size_bytes": 9001754240,
+      "download_url": "https://huggingface.co/TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF/resolve/main/Qwen3-14B-Claude-4.5-Opus-Distill.q4_k_m.gguf"
+    },
+    {
+      "name": "Phi-4-reasoning-vision-15B-GGUF",
+      "repo_id": "jamesburton/Phi-4-reasoning-vision-15B-GGUF",
+      "description": "Text Generation \u2022 15B \u2022 Updated 6 days ago \u2022 2.4k \u2022 3",
+      "parameters": "15B",
+      "abilities": [
+        "text-generation",
+        "reasoning",
+        "vision",
+        "censored"
+      ],
+      "gguf_file": "phi-4-reasoning-vision-q4_K_M.gguf",
+      "gguf_size_bytes": 9053113824,
+      "download_url": "https://huggingface.co/jamesburton/Phi-4-reasoning-vision-15B-GGUF/resolve/main/phi-4-reasoning-vision-q4_K_M.gguf"
+    },
+    {
+      "name": "Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B-GGUF",
+      "repo_id": "DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B-GGUF",
+      "description": "Text Generation \u2022 18B \u2022 Updated Dec 1, 2025 \u2022 74.9k \u2022 509",
+      "parameters": "18B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "L3.2-8X3B-MOE-Dark-Champion-Inst-18.4B-uncen-ablit_D_AU-Q4_k_m.gguf",
+      "gguf_size_bytes": 11312942112,
+      "download_url": "https://huggingface.co/DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B-GGUF/resolve/main/L3.2-8X3B-MOE-Dark-Champion-Inst-18.4B-uncen-ablit_D_AU-Q4_k_m.gguf"
+    },
+    {
+      "name": "Qwen3.5-24B-A3B-REAP-0.32-GGUF",
+      "repo_id": "sandeshrajx/Qwen3.5-24B-A3B-REAP-0.32-GGUF",
+      "description": "Text Generation \u2022 19B \u2022 Updated 6 days ago \u2022 5.23k \u2022 4",
+      "parameters": "19B",
+      "abilities": [
+        "text-generation",
+        "reasoning",
+        "censored"
+      ],
+      "gguf_file": "Qwen3.5-18B-REAP-A3B-Coding-IQ4_K_M.gguf",
+      "gguf_size_bytes": 12108602016,
+      "download_url": "https://huggingface.co/sandeshrajx/Qwen3.5-24B-A3B-REAP-0.32-GGUF/resolve/main/Qwen3.5-18B-REAP-A3B-Coding-IQ4_K_M.gguf"
+    },
+    {
+      "name": "OpenAi-GPT-oss-20b-abliterated-uncensored-NEO-Imatrix-gguf",
+      "repo_id": "DavidAU/OpenAi-GPT-oss-20b-abliterated-uncensored-NEO-Imatrix-gguf",
+      "description": "Text Generation \u2022 21B \u2022 Updated Nov 17, 2025 \u2022 87.2k \u2022 460",
+      "parameters": "21B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "OpenAi-GPT-oss-20b-abliterated-uncensored-NEO-Imatrix.Q4_K_M.gguf",
+      "gguf_size_bytes": null,
+      "download_url": "https://huggingface.co/DavidAU/OpenAi-GPT-oss-20b-abliterated-uncensored-NEO-Imatrix-gguf/resolve/main/OpenAi-GPT-oss-20b-abliterated-uncensored-NEO-Imatrix.Q4_K_M.gguf"
+    },
+    {
+      "name": "OpenAi-GPT-oss-20b-HERETIC-uncensored-NEO-Imatrix-gguf",
+      "repo_id": "DavidAU/OpenAi-GPT-oss-20b-HERETIC-uncensored-NEO-Imatrix-gguf",
+      "description": "Text Generation \u2022 21B \u2022 Updated Nov 30, 2025 \u2022 45.7k \u2022 112",
+      "parameters": "21B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "OpenAi-GPT-oss-20b-HERETIC-uncensored-NEO-Imatrix.Q4_K_M.gguf",
+      "gguf_size_bytes": null,
+      "download_url": "https://huggingface.co/DavidAU/OpenAi-GPT-oss-20b-HERETIC-uncensored-NEO-Imatrix-gguf/resolve/main/OpenAi-GPT-oss-20b-HERETIC-uncensored-NEO-Imatrix.Q4_K_M.gguf"
+    },
+    {
+      "name": "gpt-oss-20b-GGUF",
+      "repo_id": "unsloth/gpt-oss-20b-GGUF",
+      "description": "Text Generation \u2022 21B \u2022 Updated Dec 19, 2025 \u2022 322k \u2022 624",
+      "parameters": "21B",
+      "abilities": [
+        "text-generation",
+        "censored"
+      ],
+      "gguf_file": "gpt-oss-20b-Q4_K_M.gguf",
+      "gguf_size_bytes": 11624759488,
+      "download_url": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q4_K_M.gguf"
+    },
+    {
+      "name": "kappa-20b-131k-GGUF-Q8_0",
+      "repo_id": "eousphoros/kappa-20b-131k-GGUF-Q8_0",
+      "description": "Text Generation \u2022 21B \u2022 Updated 11 days ago \u2022 622 \u2022 5",
+      "parameters": "21B",
+      "abilities": [
+        "text-generation",
+        "reasoning",
+        "censored"
+      ],
+      "gguf_file": "kappa-20b-131k.Q4_K_M.gguf",
+      "gguf_size_bytes": null,
+      "download_url": "https://huggingface.co/eousphoros/kappa-20b-131k-GGUF-Q8_0/resolve/main/kappa-20b-131k.Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen3-The-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF",
+      "repo_id": "DavidAU/Qwen3-The-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF",
+      "description": "Text Generation \u2022 22B \u2022 Updated Jul 28, 2025 \u2022 389 \u2022 14",
+      "parameters": "22B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Qwen3-The-Josiefied-Omega-Directive-22B-uncensored-abliterated-Q4_K_M.gguf",
+      "gguf_size_bytes": 13333473792,
+      "download_url": "https://huggingface.co/DavidAU/Qwen3-The-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF/resolve/main/Qwen3-The-Josiefied-Omega-Directive-22B-uncensored-abliterated-Q4_K_M.gguf"
+    },
+    {
+      "name": "Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF",
+      "repo_id": "DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF",
+      "description": "Text Generation \u2022 22B \u2022 Updated Jul 28, 2025 \u2022 1.53k \u2022 31",
+      "parameters": "22B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "Qwen3-Xiaolong-Josiefied-Omega-Directive-22B-uncen-ablit-D_AU-Q4_k_m.gguf",
+      "gguf_size_bytes": 13333473728,
+      "download_url": "https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF/resolve/main/Qwen3-Xiaolong-Josiefied-Omega-Directive-22B-uncen-ablit-D_AU-Q4_k_m.gguf"
+    },
+    {
+      "name": "Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-Q4_K_M-GGUF",
+      "repo_id": "Recouper/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-Q4_K_M-GGUF",
+      "description": "Text Generation \u2022 22B \u2022 Updated Jun 10, 2025 \u2022 78 \u2022 1",
+      "parameters": "22B",
+      "abilities": [
+        "uncensored"
+      ],
+      "gguf_file": "qwen3-the-xiaolong-josiefied-omega-directive-22b-uncensored-abliterated-q4_k_m.gguf",
+      "gguf_size_bytes": 13333475520,
+      "download_url": "https://huggingface.co/Recouper/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-Q4_K_M-GGUF/resolve/main/qwen3-the-xiaolong-josiefied-omega-directive-22b-uncensored-abliterated-q4_k_m.gguf"
+    },
+    {
+      "name": "GLM-4.7-Flash-REAP-23B-A3B-GGUF",
+      "repo_id": "unsloth/GLM-4.7-Flash-REAP-23B-A3B-GGUF",
+      "description": "Text Generation \u2022 23B \u2022 Updated Jan 28 \u2022 39.3k \u2022 173",
+      "parameters": "23B",
+      "abilities": [
+        "text-generation",
+        "reasoning",
+        "censored"
+      ],
+      "gguf_file": "GLM-4.7-Flash-REAP-23B-A3B-Q4_K_M.gguf",
+      "gguf_size_bytes": 14113838816,
+      "download_url": "https://huggingface.co/unsloth/GLM-4.7-Flash-REAP-23B-A3B-GGUF/resolve/main/GLM-4.7-Flash-REAP-23B-A3B-Q4_K_M.gguf"
+    },
+    {
+      "name": "LFM2-24B-A2B-GGUF",
+      "repo_id": "LiquidAI/LFM2-24B-A2B-GGUF",
+      "description": "Text Generation \u2022 24B \u2022 Updated 23 days ago \u2022 26.3k \u2022 108",
+      "parameters": "24B",
+      "abilities": [
+        "text-generation",
+        "censored"
+      ],
+      "gguf_file": "LFM2-24B-A2B-Q4_K_M.gguf",
+      "gguf_size_bytes": 14415473952,
+      "download_url": "https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF/resolve/main/LFM2-24B-A2B-Q4_K_M.gguf"
+    }
+  ]
+}
