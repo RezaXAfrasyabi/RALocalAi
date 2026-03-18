@@ -33,7 +33,7 @@ This repository demonstrates a production-minded Flutter application that:
 | <img src="images/photo_1.jpg" width="200" alt="Onboarding - About" /> | <img src="images/photo_2.jpg" width="200" alt="Onboarding - How it works" /> | <img src="images/photo_3.jpg" width="200" alt="Onboarding - Get started" /> |
 | <img src="images/photo_4.jpg" width="200" alt="Onboarding - Need help" /> | <img src="images/photo_5.jpg" width="200" alt="Chat - Empty state" /> | <img src="images/photo_6.jpg" width="200" alt="Chat - Drawer navigation" /> |
 
-| Models | Settings | Diagnostics |
+| Models | Diagnostics | Settings |
 |---|---|---|
 | <img src="images/photo_8.jpg" width="200" alt="Download model list" /> | <img src="images/photo_9.jpg" width="200" alt="Generation settings" /> | <img src="images/photo_10.jpg" width="200" alt="In-app terminal" /> |
 
