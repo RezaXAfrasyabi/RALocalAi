@@ -116,3 +116,8 @@ This project’s Dart sources under `lib/` include GNU GPLv3 headers. See the GP
 ## Author
 
 Reza Afrasyabi — `rezaafrasyabi.com`
+
+## License
+
+This project is licensed under the GNU GPLv3 License - see the LICENSE file for details.
+Copyright © 2026 Reza Afrasyabi.
