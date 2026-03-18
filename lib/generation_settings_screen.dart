@@ -124,7 +124,7 @@ class _GenerationSettingsScreenState
             ),
           ),
           DropdownButtonFormField<int>(
-            value: kContextSizeOptions.contains(_contextSize)
+            initialValue: kContextSizeOptions.contains(_contextSize)
                 ? _contextSize
                 : kContextSizeOptions.first,
             decoration: const InputDecoration(
@@ -153,7 +153,7 @@ class _GenerationSettingsScreenState
             ),
           ),
           DropdownButtonFormField<ModelType?>(
-            value: _promptFormat,
+            initialValue: _promptFormat,
             decoration: const InputDecoration(
               isDense: true,
               contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
