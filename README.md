@@ -1,6 +1,6 @@
 # RALocalAi
 
-Offline-first **local LLM chat** for Android built with Flutter. Run **GGUF** models fully on-device via **llama.cpp** (through `flutter_llama`) with streaming responses, model download/import, and persisted chat history.
+Offline-first **local LLM chat** for Android built with Flutter. Run **GGUF** models fully on-device via **[llama.cpp](https://github.com/ggerganov/llama.cpp)** (through `flutter_llama`) with streaming responses, model download/import, and persisted chat history.
 
 ## Why this exists
 
@@ -142,5 +142,5 @@ Reza Afrasyabi — `rezaafrasyabi.com`
 
 ## License
 
-This project is licensed under the GNU GPLv3 License - see the LICENSE file for details.
+This project is licensed under the **[GNU GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.html)** - see the [LICENSE](LICENSE) file for details.
 Copyright © 2026 Reza Afrasyabi.
