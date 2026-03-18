@@ -138,7 +138,7 @@ flutter run
 
 ## Author
 
-Reza Afrasyabi — `rezaafrasyabi.com`
+Reza Afrasyabi — [`rezaafrasyabi.com`](https://rezaafrasyabi.com)
 
 ## License
 
